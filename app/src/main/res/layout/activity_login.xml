@@ -45,7 +45,7 @@
                     android:layout_marginTop="@dimen/dp_20"
                     android:text="Login"
                     android:textColor="@color/text_color"
-                    android:textSize="@dimen/dp_20" />
+                    android:textSize="@dimen/dp_18" />
 
                 <android.support.design.widget.TextInputLayout
                     android:id="@+id/usernameWrapper"
@@ -53,6 +53,7 @@
                     android:layout_height="wrap_content">
 
                     <EditText
+                        android:textSize="@dimen/dp_16"
                         android:id="@+id/username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -87,11 +88,13 @@
                             android:imeOptions="actionDone"
                             android:inputType="textPassword"
                             android:padding="@dimen/dp_10"
+                            android:textSize="@dimen/dp_16"
                             android:singleLine="true" />
 
                     </android.support.design.widget.TextInputLayout>
 
                     <TextView
+                        android:padding="@dimen/dp_10"
                         android:clickable="true"
                         android:onClick="tvFrogot"
                         android:layout_centerVertical="true"
@@ -104,7 +107,7 @@
                         android:text="Forget?"
                         android:textAllCaps="false"
                         android:textColor="#afaaaa"
-                        android:textSize="18dp" />
+                        android:textSize="12dp" />
                 </RelativeLayout>
 
 
@@ -139,7 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:padding="@dimen/dp_12"
+                android:padding="@dimen/dp_10"
                 android:text="Login with Facebook"
                 android:textAllCaps="true"
                 android:textColor="#ffff" />
@@ -159,17 +162,17 @@
                 android:layout_height="wrap_content"
                 android:text="Don't hav e an account?"
                 android:textColor="@color/text_lightcolor"
-                android:textSize="@dimen/dp_18" />
+                android:textSize="@dimen/dp_10" />
 
             <TextView
                 android:clickable="true"
                 android:onClick="tvSignUp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sign up"
+                android:text="  Sign up"
                 android:textAllCaps="true"
                 android:textColor="#ffff"
-                android:textSize="@dimen/dp_20" />
+                android:textSize="@dimen/dp_14" />
         </LinearLayout>
     </LinearLayout>
     </ScrollView>

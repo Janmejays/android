@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.janmejay.meete.R;
-import com.example.janmejay.meete.controller.Home.HomeActivity;
+import com.example.janmejay.meete.controller.Home.mainActivity;
 
 public class LoginActivity extends Activity {
 
@@ -18,7 +18,7 @@ public class LoginActivity extends Activity {
     }
 
     public void btnhome(View view) {
-        startActivity(new Intent(this, HomeActivity.class));
+        startActivity(new Intent(this, mainActivity.class));
     }
 
     public void tvSignUp(View view) {
