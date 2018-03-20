@@ -19,18 +19,17 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:src="@mipmap/logo" />
 
-            <android.support.v7.widget.CardView
+            <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginTop="30dp"
-                android:background="#ffffff"
-                app:cardCornerRadius="15dp">
+                android:layout_marginTop="40dp"
+                android:background="@drawable/relative_layout_card">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -44,8 +43,9 @@
                         android:layout_marginBottom="@dimen/dp_28"
                         android:layout_marginTop="@dimen/dp_24"
                         android:text="SignUp"
+                        android:textStyle="bold"
                         android:textColor="@color/text_color"
-                        android:textSize="@dimen/dp_20" />
+                        android:textSize="@dimen/sp_14" />
 
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/usernameWrapper"
@@ -53,6 +53,7 @@
                         android:layout_height="wrap_content">
 
                         <EditText
+                            android:textSize="@dimen/sp_12"
                             android:id="@+id/username"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -60,10 +61,11 @@
                             android:hint="Username"
                             android:imeOptions="actionNext"
                             android:inputType="textEmailAddress"
-                            android:padding="@dimen/dp_10"
+                            android:padding="10dp"
                             android:singleLine="true" />
 
                     </android.support.design.widget.TextInputLayout>
+
                     <android.support.design.widget.TextInputLayout
                         android:id="@+id/til_email_address"
                         android:layout_width="match_parent"
@@ -71,6 +73,7 @@
                         android:orientation="vertical">
 
                         <EditText
+                            android:textSize="@dimen/sp_12"
                             android:id="@+id/et_email_id"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -89,9 +92,10 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_toLeftOf="@+id/tv_forgot"
-                          android:orientation="vertical">
+                        android:orientation="vertical">
 
                         <EditText
+                            android:textSize="@dimen/sp_12"
                             android:id="@+id/password"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -112,17 +116,18 @@
                         android:text="@string/Agree" />
 
                     <Button
-                        android:onClick="btnSignUp"
+                        android:textSize="@dimen/sp_12"
                         android:id="@+id/btn_sign_up"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="10dp"
-                        android:text="@string/signup"
                         android:background="@mipmap/rectangle_green_icon"
+                        android:onClick="btnSignUp"
+                        android:text="@string/signup"
                         android:textAllCaps="true"
                         android:textColor="#ffff" />
                 </LinearLayout>
-            </android.support.v7.widget.CardView>
+            </RelativeLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -131,7 +136,7 @@
                 android:layout_marginLeft="@dimen/dp_16"
                 android:layout_marginRight="@dimen/dp_16"
                 android:background="@drawable/fb_button"
-                android:gravity="center">
+                >
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -140,15 +145,17 @@
                     android:src="@mipmap/facebook" />
 
                 <TextView
-                    android:layout_width="wrap_content"
+                    android:textSize="@dimen/sp_16"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:padding="@dimen/dp_12"
                     android:text="Login with Facebook"
                     android:textAllCaps="true"
                     android:textColor="#ffff" />
 
             </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

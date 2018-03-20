@@ -11,4 +11,12 @@
 
     <item name="android:windowFullscreen">true</item>
 </style>
+
+
+<style name="myAppthemeRatingBar" parent="Widget.AppCompat.RatingBar.Small">
+    <item name="colorAccent">#faaf00</item>
+</style>
+<style name="appTablayout" parent="TextAppearance.Design.Tab">
+    <item name="textAllCaps">false</item>
+</style>
 </resources>

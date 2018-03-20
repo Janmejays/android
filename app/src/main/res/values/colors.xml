@@ -6,4 +6,5 @@
      <color name="colorAppback">#3c9be6</color>
     <color name="text_color">#425062</color>
     <color name="text_lightcolor">#9fb0c5</color>
+    <color name="colorwhite">#ffff</color>
 </resources>
