@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="@dimen/dp_10"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/ll_layout_follow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profile_placeholder" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_marginTop="@dimen/dp_6"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="Petiya Sethi"
+                android:textColor="#424242"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:text="25 Checkins"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="60dp">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/follow_custom"
+                android:text="Follow"
+                android:textAllCaps="false"
+                android:textColor="#c9c9c9" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_layout_follow"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/profile_placeholder" />
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_7"
+            android:layout_marginTop="@dimen/dp_6"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_5"
+                android:text="Petiya Sethi"
+                android:textColor="#424242"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_8"
+                android:text="25 Checkins"
+                android:textSize="@dimen/sp_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="60dp">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="@dimen/dp_10"
+                android:background="@drawable/green_button_round"
+                android:text="Follow"
+                android:textAllCaps="false"
+                android:textColor="#c9c9c9" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
