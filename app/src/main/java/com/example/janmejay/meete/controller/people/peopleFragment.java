@@ -20,6 +20,7 @@ public class peopleFragment extends Fragment {
    private FragmentManager fm;
    private ViewPager viewPager;
    private TabLayout tabLayout;
+   private TextView tvToolbarHeading;
     public peopleFragment() {
         // Required empty public constructor
     }

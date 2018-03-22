@@ -2,23 +2,24 @@
 <LinearLayout
     android:orientation="horizontal"
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="145dp"
-    android:layout_height="50dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:background="@drawable/green_corner">
     <TextView
-        android:id="@+id/tv_title"
-        android:paddingTop="@dimen/dp_10"
-        android:paddingLeft="@dimen/dp_10"
+        android:clickable="true"
+        android:layout_marginLeft="@dimen/dp_10"
+        android:paddingTop="@dimen/dp_15"
+        android:id="@+id/tv_title_icon"
         android:textColor="#ffff"
-        android:textSize="14dp"
+        android:textSize="16dp"
         android:text="Title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:paddingLeft="@dimen/dp_40"
-        android:id="@+id/iv_location"
-        android:src="@mipmap/indiagate"
-        android:layout_width="100dp"
-        android:layout_height="50dp" />
 
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_marginLeft="@dimen/dp_10"
+        android:id="@+id/iv_location_icon"
+        android:src="@mipmap/indiagate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>

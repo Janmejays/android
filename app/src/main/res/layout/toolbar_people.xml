@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
     android:layout_height="match_parent">
     <RelativeLayout
-        android:id="@+id/rl_header"
+        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:background="@drawable/appback">
@@ -17,12 +17,13 @@
             android:id="@+id/circleImageView" />
 
         <TextView
+            android:id="@+id/tv_toolbar_heading"
             android:layout_marginTop="@dimen/dp_8"
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
-            android:text="People"
+            android:text="Near by Places"
             android:textColor="#ffff"
             android:textSize="@dimen/sp_16" />
 
@@ -34,5 +35,4 @@
             android:layout_alignParentRight="true"
             android:src="@drawable/search_white" />
     </RelativeLayout>
-
 </RelativeLayout>
